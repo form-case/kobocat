@@ -109,7 +109,7 @@ RUN chown -R ":${UWSGI_GROUP}" ${CELERY_PID_DIR} && \
 
 WORKDIR "${KOBOCAT_SRC_DIR}"
 
-# TODO: Remove port 8000, say, at the start of 2021 (see kobotoolbox/kobo-docker#301 and wrong port warning above)
+# TODO: Remove port 8000, say, at the start of 2021 (see form-case/kobo-docker#301 and wrong port warning above)
 EXPOSE 8001 8000
 
 CMD ["/bin/bash", "-c", "exec ${KOBOCAT_SRC_DIR}/docker/init.bash"]

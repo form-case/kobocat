@@ -4039,7 +4039,7 @@ msgstr ""
 #: templates/500.html:8
 msgid ""
 "If this is a significant error that needs to be fixed, please send a support "
-"request to support@kobotoolbox.org with information about what triggered "
+"request to support@form-case.org with information about what triggered "
 "this error."
 msgstr ""
 

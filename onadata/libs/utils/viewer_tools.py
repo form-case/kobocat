@@ -181,12 +181,12 @@ def create_attachments_zipfile(attachments, output_file=None):
     else:
         # Disable seeking in a way understood by Python's zipfile module. See
         # https://github.com/python/cpython/blob/ca2009d72a52a98bf43aafa9ad270a4fcfabfc89/Lib/zipfile.py#L1270-L1274
-        # This is a workaround for https://github.com/kobotoolbox/kobocat/issues/475
+        # This is a workaround for https://github.com/form-case/kobocat/issues/475
         # and https://github.com/jschneier/django-storages/issues/566
         def no_seeking(*a, **kw):
             raise AttributeError(
                 'Seeking disabled! See '
-                'https://github.com/kobotoolbox/kobocat/issues/475'
+                'https://github.com/form-case/kobocat/issues/475'
             )
         try:
             output_file.seek = no_seeking

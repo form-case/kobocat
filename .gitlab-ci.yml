@@ -54,7 +54,7 @@ deploy-beta:
     - helm -n kobo-dev upgrade beta kobo/kobo --atomic --set-string kobocat.image.tag=${CI_COMMIT_SHORT_SHA} --reuse-values
   environment:
     name: beta
-    url: https://kc.beta.kobotoolbox.org
+    url: https://kc.beta.form-case.org
   only:
     refs:
       - public-beta

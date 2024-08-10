@@ -168,7 +168,7 @@ class XFormManifestSerializer(serializers.Serializer):
     def get_filename(self, obj):
         # If file has been synchronized from KPI and it is a remote URL,
         # manifest.xml should return only the name, not the full URL.
-        # See https://github.com/kobotoolbox/kobocat/issues/344
+        # See https://github.com/form-case/kobocat/issues/344
         if obj.from_kpi:
             return obj.filename
 

@@ -32,7 +32,7 @@ def delete_daily_counters():
 
 
 # ## ISSUE 242 TEMPORARY FIX ##
-# See https://github.com/kobotoolbox/kobocat/issues/242
+# See https://github.com/form-case/kobocat/issues/242
 
 
 @shared_task(soft_time_limit=600, time_limit=900)

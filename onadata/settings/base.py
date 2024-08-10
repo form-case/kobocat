@@ -51,7 +51,7 @@ ADMINS = (
 MANAGERS = ADMINS
 
 
-DEFAULT_FROM_EMAIL = 'noreply@kobotoolbox.org'
+DEFAULT_FROM_EMAIL = 'noreply@form-case.org'
 DEFAULT_SESSION_EXPIRY_TIME = 21600  # 6 hours
 
 # Local time zone for this installation. Choices can be found here:
@@ -462,7 +462,7 @@ KOBOCAT_INTERNAL_HOSTNAME = '{}.{}'.format(
     os.environ.get('INTERNAL_DOMAIN_NAME', 'docker.internal'))
 KOBOCAT_PUBLIC_HOSTNAME = '{}.{}'.format(
     os.environ.get('KOBOCAT_PUBLIC_SUBDOMAIN', 'kc'),
-    os.environ.get('PUBLIC_DOMAIN_NAME', 'kobotoolbox.org'))
+    os.environ.get('PUBLIC_DOMAIN_NAME', 'form-case.org'))
 
 OAUTH2_PROVIDER = {
     # this is the list of available scopes
@@ -700,7 +700,7 @@ CELERY_BROKER_TRANSPORT_OPTIONS = {
 
 CELERY_BEAT_SCHEDULE = {
     # Periodically mark exports stuck in the "pending" state as "failed"
-    # See https://github.com/kobotoolbox/kobocat/issues/315
+    # See https://github.com/form-case/kobocat/issues/315
     "log-stuck-exports-and-mark-failed": {
         "task": "onadata.apps.viewer.tasks.log_stuck_exports_and_mark_failed",
         "schedule": timedelta(hours=6),
@@ -726,7 +726,7 @@ CELERY_TASK_DEFAULT_QUEUE = "kobocat_queue"
 # Enketo Express settings      #
 ################################
 
-ENKETO_URL = os.environ.get('ENKETO_URL', 'https://enketo.kobotoolbox.org')
+ENKETO_URL = os.environ.get('ENKETO_URL', 'https://enketo.form-case.org')
 
 ENKETO_URL = ENKETO_URL.rstrip('/')
 ENKETO_API_TOKEN = os.environ.get('ENKETO_API_TOKEN', 'enketorules')

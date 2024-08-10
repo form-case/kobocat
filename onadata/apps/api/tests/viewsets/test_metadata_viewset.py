@@ -34,7 +34,7 @@ class TestMetaDataViewSet(TestAbstractViewSet):
 
         self.alice_profile_data = {
             'username': 'alice',
-            'email': 'alice@kobotoolbox.org',
+            'email': 'alice@form-case.org',
             'password1': 'alice',
             'password2': 'alice',
             'name': 'Alice',

@@ -62,7 +62,7 @@ class XFormListApi(viewsets.ReadOnlyModelViewSet):
 
     def get_response_for_head_request(self):
         # Copied from
-        # https://github.com/kobotoolbox/kpi/commit/cabcaaa664159320ba281fd588423423a17f5b82
+        # https://github.com/form-case/kpi/commit/cabcaaa664159320ba281fd588423423a17f5b82
         # See further discussion there
         return Response(
             headers=self.get_openrosa_headers(), status=status.HTTP_204_NO_CONTENT

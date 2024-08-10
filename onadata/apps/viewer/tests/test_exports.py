@@ -235,7 +235,7 @@ class TestExports(TestBase):
             Export.exports_outdated(xform=self.xform,
                                     export_type=Export.XLS_EXPORT))
         # Force a new export. Auto export has been removed in
-        # https://github.com/kobotoolbox/kobocat/commit/40c67f219778065d24f405b28de790179e1fc4b2
+        # https://github.com/form-case/kobocat/commit/40c67f219778065d24f405b28de790179e1fc4b2
         generate_export(
             Export.XLS_EXPORT, 'xls', self.user.username, self.xform.id_string)
         export_list_url = reverse(export_list, kwargs={
@@ -249,7 +249,7 @@ class TestExports(TestBase):
                                   export_type=Export.XLS_EXPORT).count(),
             num_exports + 1)
         # Force a new export with another type. Auto export has been removed in
-        # https://github.com/kobotoolbox/kobocat/commit/40c67f219778065d24f405b28de790179e1fc4b2
+        # https://github.com/form-case/kobocat/commit/40c67f219778065d24f405b28de790179e1fc4b2
         num_exports = Export.objects.filter(
             xform=self.xform, export_type=Export.CSV_EXPORT).count()
         generate_export(

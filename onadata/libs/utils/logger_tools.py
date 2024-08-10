@@ -630,7 +630,7 @@ def save_submission(
     # signal, but that takes a lock on `logger_xform` that persists until the
     # end of the transaction.  We must avoid doing that until all attachments
     # are saved, and we are as close as possible to the end of the transaction.
-    # See https://github.com/kobotoolbox/kobocat/issues/490.
+    # See https://github.com/form-case/kobocat/issues/490.
     #
     # `_get_instance(..., defer_counting=True)` skips incrementing the
     # submission counters and returns an `Instance` with a `defer_counting`

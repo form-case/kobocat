@@ -1,19 +1,19 @@
 # KoboCAT
 
-## Important notice when upgrading from any release older than [`2.020.18`](https://github.com/kobotoolbox/kobocat/releases/tag/2.020.18)
+## Important notice when upgrading from any release older than [`2.020.18`](https://github.com/form-case/kobocat/releases/tag/2.020.18)
 
-Up to and including release [`2.020.18`](https://github.com/kobotoolbox/kobocat/releases/tag/2.020.18), this project (KoboCAT) and [KPI](https://github.com/kobotoolbox/kpi) both shared a common Postgres database. They now each have their own. **If you are upgrading an existing single-database installation, you must follow [these instructions](https://community.kobotoolbox.org/t/upgrading-to-separate-databases-for-kpi-and-kobocat/7202)** to migrate the KPI tables to a new database and adjust your configuration appropriately.
+Up to and including release [`2.020.18`](https://github.com/form-case/kobocat/releases/tag/2.020.18), this project (KoboCAT) and [KPI](https://github.com/form-case/kpi) both shared a common Postgres database. They now each have their own. **If you are upgrading an existing single-database installation, you must follow [these instructions](https://community.form-case.org/t/upgrading-to-separate-databases-for-kpi-and-kobocat/7202)** to migrate the KPI tables to a new database and adjust your configuration appropriately.
 
-If you do not want to upgrade at this time, please use the [`shared-database-obsolete`](https://github.com/kobotoolbox/kobocat/tree/shared-database-obsolete) branch instead.
+If you do not want to upgrade at this time, please use the [`shared-database-obsolete`](https://github.com/form-case/kobocat/tree/shared-database-obsolete) branch instead.
 
 ## Deprecation Notices
 
 Much of the user-facing features of this application are being migrated
-to <https://github.com/kobotoolbox/kpi>. KoboCAT's data-access API and
+to <https://github.com/form-case/kpi>. KoboCAT's data-access API and
 OpenRosa functions will remain intact, and any plans to the contrary
 will be announced well in advance. For more details and discussion,
 please refer to
-<https://community.kobotoolbox.org/t/contemplating-the-future-of-kobocat/2743>.
+<https://community.form-case.org/t/contemplating-the-future-of-kobocat/2743>.
 
 As features are migrated, we will list them here along with the last
 release where each was present:
@@ -22,7 +22,7 @@ release where each was present:
     removed, and it was announced that the legacy KoboCAT user interface would
     be preserved for "a few more months". After more than two years, we have
     removed the user interface and related endpoints entirely in release
-    [2.023.37](https://github.com/kobotoolbox/kobocat/releases/tag/2.023.37).
+    [2.023.37](https://github.com/form-case/kobocat/releases/tag/2.023.37).
     **This includes the ability to upload XLSForms via the legacy KoboCAT API.**
     Please use the KPI `v2` API for all form management. Other removed features
     should already be available in KPI as well. Please see
@@ -30,16 +30,16 @@ release where each was present:
   - To ensure security and stability, many endpoints that were already
     available in KPI, long-unsupported, or underutilized have been removed in
     release
-    [2.020.40](https://github.com/kobotoolbox/kobocat/releases/tag/2.020.40).
+    [2.020.40](https://github.com/form-case/kobocat/releases/tag/2.020.40).
     These were related to charts and stats, form cloning, form sharing, user
     profiles, organizations / projects / teams, bamboo, and ziggy. For a full
     list, please see [REMOVALS.md](REMOVALS.md). These endpoints were last
     available in the release
-    [2.020.39](https://github.com/kobotoolbox/kobocat/releases/tag/2.020.39).
+    [2.020.39](https://github.com/form-case/kobocat/releases/tag/2.020.39).
   - REST Services - an improved version [has been added to
-    KPI](https://github.com/kobotoolbox/kpi/pull/1864). The last KoboCAT
+    KPI](https://github.com/form-case/kpi/pull/1864). The last KoboCAT
     release to contain legacy REST services is
-    [2.019.39](https://github.com/kobotoolbox/kobocat/releases/tag/2.019.39).
+    [2.019.39](https://github.com/form-case/kobocat/releases/tag/2.019.39).
 
 ## About
 
@@ -50,7 +50,7 @@ developed by Ona LLC, which in itself is a redevelopment of the
 the Sustainable Engineering Lab at Columbia University.
 
 Please refer to
-[kobo-install](https://github.com/kobotoolbox/kobo-install) for
+[kobo-install](https://github.com/form-case/kobo-install) for
 instructions on how to install KoboToolbox.
 
 ## Code Structure

@@ -3,7 +3,7 @@ set -e
 
 source /etc/profile
 
-# Per kobotoolbox/kobo-docker#301, we have changed the uWSGI port to 8001. This
+# Per form-case/kobo-docker#301, we have changed the uWSGI port to 8001. This
 # provides a helpful message to anyone still trying to use port 8000
 if [[ "${KOBOCAT_WEB_SERVER,,}" == "uwsgi" ]]
 then

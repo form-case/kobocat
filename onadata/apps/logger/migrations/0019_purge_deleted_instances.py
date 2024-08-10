@@ -8,7 +8,7 @@ def purge_deleted_instances(apps, schema_editor):
     Remove all submissions that have been already marked as deleted from both
     PostgreSQL and MongoDB. If this is too slow, revert to a previous release
     and run the code in
-    https://github.com/kobotoolbox/kobocat/issues/696#issuecomment-809622367
+    https://github.com/form-case/kobocat/issues/696#issuecomment-809622367
     using `manage.py shell_plus`.
     """
     Instance = apps.get_model('logger', 'Instance')

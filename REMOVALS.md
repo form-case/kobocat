@@ -1,7 +1,7 @@
 # KoboCAT endpoint removals as of release 2.023.37
 
 The entire KoboCAT user interface has been removed.
-The last release to contain a user interface or any of the endpoints listed below was [2.023.21](https://github.com/kobotoolbox/kpi/releases/tag/2.023.21).
+The last release to contain a user interface or any of the endpoints listed below was [2.023.21](https://github.com/form-case/kpi/releases/tag/2.023.21).
 
 ## Obsolete User Interface
 
@@ -63,7 +63,7 @@ URL Pattern | View Class or Function | View Name
 
 # KoboCAT endpoint removals as of release 2.021.22
 
-The last release to contain any of the endpoints listed below was [2.021.21](https://github.com/kobotoolbox/kpi/releases/tag/2.021.21).
+The last release to contain any of the endpoints listed below was [2.021.21](https://github.com/form-case/kpi/releases/tag/2.021.21).
 
 ## Submission Data Access and Management
 
@@ -119,7 +119,7 @@ URL Pattern | View Class or Function | Description | Available in KPI
 `/<username>/sms_multiple_submissions` | `onadata.apps.sms_support.views.import_multiple_submissions` | Data collection via SMS (non-functional) | No
 `/<username>/sms_submission` | `onadata.apps.sms_support.views.import_submission` | Data collection via SMS (non-functional) | No
 `/<username>/sms_submission/<service>/` | `onadata.apps.sms_support.providers.import_submission` | Data collection via SMS (non-functional) | No
-`/about-us/` | `onadata.apps.main.views.about_us` | Unused informational page | Yes (on kobotoolbox.org)
+`/about-us/` | `onadata.apps.main.views.about_us` | Unused informational page | Yes (on form-case.org)
 `/accounts/activate/<activation_key>/` | `registration.backends.default.views.ActivationView` | Unused user management | Yes (always was)
 `/accounts/activate/complete/` | `django.views.generic.base.TemplateView` | Unused user management | Yes (always was)
 `/accounts/password/change/` | `django.contrib.auth.views.password_change` | Unused user management | Yes (always was)
@@ -133,24 +133,24 @@ URL Pattern | View Class or Function | Description | Available in KPI
 `/activity/fields` | `onadata.apps.main.views.activity_fields` | Schema for audit log | No
 `/api/v1/profiles/<user>/change_password` | `onadata.apps.api.viewsets.user_profile_viewset.UserProfileViewSet` | Unused user management | Yes (always was)
 `/api/v1/profiles/<user>/change_password.<format>/` | `onadata.apps.api.viewsets.user_profile_viewset.UserProfileViewSet` | Unused user management | Yes (always was)
-`/faq/` | `onadata.apps.main.views.faq` | Unused informational page | Yes (on kobotoolbox.org)
+`/faq/` | `onadata.apps.main.views.faq` | Unused informational page | Yes (on form-case.org)
 `/gauthtest/` | `onadata.apps.main.google_export.google_oauth2_request` | Google authentication (non-functional) | No
-`/getting_started/` | `onadata.apps.main.views.getting_started` | Unused informational page | Yes (on kobotoolbox.org)
+`/getting_started/` | `onadata.apps.main.views.getting_started` | Unused informational page | Yes (on form-case.org)
 `/gwelcome/` | `onadata.apps.main.google_export.google_auth_return` | Google authentication (non-functional) | No
-`/people/` | `onadata.apps.main.views.members_list` | Unused informational page | Yes (on kobotoolbox.org)
+`/people/` | `onadata.apps.main.views.members_list` | Unused informational page | Yes (on form-case.org)
 `/privacy/` | `onadata.apps.main.views.privacy` | Unused informational page | Yes
-`/resources/` | `onadata.apps.main.views.resources` | Unused informational page | Yes (on kobotoolbox.org)
-`/support/` | `onadata.apps.main.views.support` | Unused informational page | Yes (on kobotoolbox.org)
-`/syntax/` | `onadata.apps.main.views.syntax` | Unused informational page | Yes (on kobotoolbox.org)
+`/resources/` | `onadata.apps.main.views.resources` | Unused informational page | Yes (on form-case.org)
+`/support/` | `onadata.apps.main.views.support` | Unused informational page | Yes (on form-case.org)
+`/syntax/` | `onadata.apps.main.views.syntax` | Unused informational page | Yes (on form-case.org)
 `/tos/` | `onadata.apps.main.views.tos` | Unused informational page | Yes
-`/tutorial/` | `onadata.apps.main.views.tutorial` | Unused informational page | Yes (on kobotoolbox.org)
+`/tutorial/` | `onadata.apps.main.views.tutorial` | Unused informational page | Yes (on form-case.org)
 `/typeahead_usernames` | `onadata.apps.main.views.username_list` | Username autocompletion for legacy permissions UI (not API endpoint for external use) | No (removed for privacy)
-`/xls2xform/` | `onadata.apps.main.views.xls2xform` | Unused informational page | Yes (on kobotoolbox.org)
+`/xls2xform/` | `onadata.apps.main.views.xls2xform` | Unused informational page | Yes (on form-case.org)
 
 
-# KoboCAT endpoint removals as of release [2.020.40](https://github.com/kobotoolbox/kobocat/releases/tag/2.020.40)
+# KoboCAT endpoint removals as of release [2.020.40](https://github.com/form-case/kobocat/releases/tag/2.020.40)
 
-The last release to contain any of the endpoints listed below was https://github.com/kobotoolbox/kobocat/releases/tag/2.020.39.
+The last release to contain any of the endpoints listed below was https://github.com/form-case/kobocat/releases/tag/2.020.39.
 
 ## Already available in KPI
 

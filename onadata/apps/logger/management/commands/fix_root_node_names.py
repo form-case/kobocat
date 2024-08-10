@@ -32,9 +32,9 @@ class Command(BaseCommand):
     name specified in the form XML and the actual instance XML. Where a
     discrepancy exists, the instance will be changed to match the form.
     The cause of these mismatches is documented at
-    https://github.com/kobotoolbox/kobocat/issues/222 and
-    https://github.com/kobotoolbox/kobocat/issues/358. See also
-    https://github.com/kobotoolbox/kobocat/issues/242.
+    https://github.com/form-case/kobocat/issues/222 and
+    https://github.com/form-case/kobocat/issues/358. See also
+    https://github.com/form-case/kobocat/issues/242.
     """
 
     help = 'fixes instances whose root node names do not match their forms'

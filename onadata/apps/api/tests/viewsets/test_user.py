@@ -18,7 +18,7 @@ class TestUserViewSet(TestAbstractViewSet):
     def setUp(self):
         alice_profile_data = {
             'username': 'alice',
-            'email': 'alice@kobotoolbox.org',
+            'email': 'alice@form-case.org',
             'password1': 'alice',
             'password2': 'alice',
             'name': 'Alice',
@@ -31,7 +31,7 @@ class TestUserViewSet(TestAbstractViewSet):
 
         admin_profile_data = {
             'username': 'admin',
-            'email': 'admin@kobotoolbox.org',
+            'email': 'admin@form-case.org',
             'password1': 'admin',
             'password2': 'admin',
             'name': 'Administrator',
